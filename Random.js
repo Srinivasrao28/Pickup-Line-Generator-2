@@ -51,7 +51,7 @@ next.addEventListener('click', reloadOnce);
 
 
 function previousLine() {
-    if (array.length == 0 && array.length == 1) {
+    if (array.length == 0 || array.length == 1) {
         ranlines.innerHTML = 'You Have To Genarate Atleast Two Lines';
     } else {
         ranlines.innerHTML = array[1];
